@@ -17,6 +17,11 @@
 		D98D67D026A9CB140008A353 /* CrushTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D98D67CF26A9CB140008A353 /* CrushTests.swift */; };
 		D98D67DB26A9CB140008A353 /* CrushUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D98D67DA26A9CB140008A353 /* CrushUITests.swift */; };
 		D98D67EC26A9F5B50008A353 /* UIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D98D67EB26A9F5B50008A353 /* UIView.swift */; };
+		D98D67F826AA07940008A353 /* CombineViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D98D67F726AA07940008A353 /* CombineViewController.swift */; };
+		D98D680126AA0DC90008A353 /* CombineCardView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D98D680026AA0DC90008A353 /* CombineCardView.swift */; };
+		D98D681326AA17FB0008A353 /* UILabel.swift in Sources */ = {isa = PBXBuildFile; fileRef = D98D681226AA17FB0008A353 /* UILabel.swift */; };
+		D98D681926AA1D2C0008A353 /* User.swift in Sources */ = {isa = PBXBuildFile; fileRef = D98D681826AA1D2C0008A353 /* User.swift */; };
+		D98D681F26AA1E4E0008A353 /* UserService.swift in Sources */ = {isa = PBXBuildFile; fileRef = D98D681E26AA1E4E0008A353 /* UserService.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -53,6 +58,11 @@
 		D98D67DA26A9CB140008A353 /* CrushUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CrushUITests.swift; sourceTree = "<group>"; };
 		D98D67DC26A9CB140008A353 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
 		D98D67EB26A9F5B50008A353 /* UIView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIView.swift; sourceTree = "<group>"; };
+		D98D67F726AA07940008A353 /* CombineViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CombineViewController.swift; sourceTree = "<group>"; };
+		D98D680026AA0DC90008A353 /* CombineCardView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CombineCardView.swift; sourceTree = "<group>"; };
+		D98D681226AA17FB0008A353 /* UILabel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UILabel.swift; sourceTree = "<group>"; };
+		D98D681826AA1D2C0008A353 /* User.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = User.swift; sourceTree = "<group>"; };
+		D98D681E26AA1E4E0008A353 /* UserService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserService.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -103,10 +113,14 @@
 		D98D67B426A9CB100008A353 /* Crush */ = {
 			isa = PBXGroup;
 			children = (
+				D98D681D26AA1E330008A353 /* Service */,
+				D98D681726AA1D1D0008A353 /* Model */,
+				D98D680526AA11AF0008A353 /* Lib */,
+				D98D67FF26AA0DB10008A353 /* View */,
+				D98D67F626AA077C0008A353 /* Controller */,
 				D98D67B526A9CB100008A353 /* AppDelegate.swift */,
 				D98D67B726A9CB100008A353 /* SceneDelegate.swift */,
 				D98D67B926A9CB100008A353 /* ViewController.swift */,
-				D98D67EB26A9F5B50008A353 /* UIView.swift */,
 				D98D67BB26A9CB100008A353 /* Main.storyboard */,
 				D98D67C126A9CB130008A353 /* Assets.xcassets */,
 				D98D67C326A9CB130008A353 /* LaunchScreen.storyboard */,
@@ -132,6 +146,47 @@
 				D98D67DC26A9CB140008A353 /* Info.plist */,
 			);
 			path = CrushUITests;
+			sourceTree = "<group>";
+		};
+		D98D67F626AA077C0008A353 /* Controller */ = {
+			isa = PBXGroup;
+			children = (
+				D98D67F726AA07940008A353 /* CombineViewController.swift */,
+			);
+			path = Controller;
+			sourceTree = "<group>";
+		};
+		D98D67FF26AA0DB10008A353 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				D98D680026AA0DC90008A353 /* CombineCardView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		D98D680526AA11AF0008A353 /* Lib */ = {
+			isa = PBXGroup;
+			children = (
+				D98D67EB26A9F5B50008A353 /* UIView.swift */,
+				D98D681226AA17FB0008A353 /* UILabel.swift */,
+			);
+			path = Lib;
+			sourceTree = "<group>";
+		};
+		D98D681726AA1D1D0008A353 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				D98D681826AA1D2C0008A353 /* User.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		D98D681D26AA1E330008A353 /* Service */ = {
+			isa = PBXGroup;
+			children = (
+				D98D681E26AA1E4E0008A353 /* UserService.swift */,
+			);
+			path = Service;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -266,8 +321,13 @@
 			files = (
 				D98D67EC26A9F5B50008A353 /* UIView.swift in Sources */,
 				D98D67BA26A9CB100008A353 /* ViewController.swift in Sources */,
+				D98D680126AA0DC90008A353 /* CombineCardView.swift in Sources */,
 				D98D67B626A9CB100008A353 /* AppDelegate.swift in Sources */,
 				D98D67B826A9CB100008A353 /* SceneDelegate.swift in Sources */,
+				D98D681926AA1D2C0008A353 /* User.swift in Sources */,
+				D98D681F26AA1E4E0008A353 /* UserService.swift in Sources */,
+				D98D67F826AA07940008A353 /* CombineViewController.swift in Sources */,
+				D98D681326AA17FB0008A353 /* UILabel.swift in Sources */,
 				D98D67C026A9CB100008A353 /* Crush.xcdatamodeld in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

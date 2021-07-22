@@ -1,5 +1,5 @@
 //
-//  UIView.swift
+//  UiView2.swift
 //  Crush
 //
 //  Created by Paulo Alfredo Coraini de Souza on 22/07/21.
@@ -8,12 +8,8 @@
 import UIKit
 
 extension UIView {
-    func fill (top: NSLayoutYAxisAnchor?,
-               leading: NSLayoutXAxisAnchor?,
-               trailing: NSLayoutXAxisAnchor?,
-               bottom: NSLayoutYAxisAnchor?,
-               padding: UIEdgeInsets = .zero,
-               size: CGSize = .zero) {
+  
+    func fill (top: NSLayoutYAxisAnchor?, leading: NSLayoutXAxisAnchor?, trailing: NSLayoutXAxisAnchor?, bottom: NSLayoutYAxisAnchor?, padding: UIEdgeInsets = .zero, size: CGSize = .zero) {
         translatesAutoresizingMaskIntoConstraints = false
         
         if let top = top {
@@ -41,12 +37,27 @@ extension UIView {
     }
     
     func fillSuperView (padding: UIEdgeInsets = .zero) {
-        fill(top: superview?.topAnchor,
-             leading: superview?.leadingAnchor,
-             trailing: superview?.trailingAnchor,
-             bottom: superview?.bottomAnchor,
-             padding: padding
+        fill(
+            top: superview?.topAnchor, leading: superview?.leadingAnchor, trailing: superview?.trailingAnchor, bottom: superview?.bottomAnchor, padding: padding
         )
+    }
+    
+    func centralizeSuperView (size: CGSize = .zero) {
+            translatesAutoresizingMaskIntoConstraints = false
         
+        if let superViewCenterX = superview?.centerXAnchor {
+            centerXAnchor.constraint(equalTo: superViewCenterX).isActive = true
+        }
+        
+        if let superViewCenterY = superview?.centerYAnchor {
+            centerYAnchor.constraint(equalTo: superViewCenterY).isActive = true
+        }
+        
+        if size.width != 0 {
+            widthAnchor.constraint(equalToConstant: size.width).isActive = true
+        }
+        if size.height != 0 {
+            heightAnchor.constraint(equalToConstant: size.height).isActive = true
+        }
     }
 }
