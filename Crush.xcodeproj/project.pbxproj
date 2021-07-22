@@ -16,6 +16,7 @@
 		D98D67C526A9CB130008A353 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D98D67C326A9CB130008A353 /* LaunchScreen.storyboard */; };
 		D98D67D026A9CB140008A353 /* CrushTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D98D67CF26A9CB140008A353 /* CrushTests.swift */; };
 		D98D67DB26A9CB140008A353 /* CrushUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D98D67DA26A9CB140008A353 /* CrushUITests.swift */; };
+		D98D67EC26A9F5B50008A353 /* UIView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D98D67EB26A9F5B50008A353 /* UIView.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -51,6 +52,7 @@
 		D98D67D626A9CB140008A353 /* CrushUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CrushUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		D98D67DA26A9CB140008A353 /* CrushUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CrushUITests.swift; sourceTree = "<group>"; };
 		D98D67DC26A9CB140008A353 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D98D67EB26A9F5B50008A353 /* UIView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIView.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -104,6 +106,7 @@
 				D98D67B526A9CB100008A353 /* AppDelegate.swift */,
 				D98D67B726A9CB100008A353 /* SceneDelegate.swift */,
 				D98D67B926A9CB100008A353 /* ViewController.swift */,
+				D98D67EB26A9F5B50008A353 /* UIView.swift */,
 				D98D67BB26A9CB100008A353 /* Main.storyboard */,
 				D98D67C126A9CB130008A353 /* Assets.xcassets */,
 				D98D67C326A9CB130008A353 /* LaunchScreen.storyboard */,
@@ -261,6 +264,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				D98D67EC26A9F5B50008A353 /* UIView.swift in Sources */,
 				D98D67BA26A9CB100008A353 /* ViewController.swift in Sources */,
 				D98D67B626A9CB100008A353 /* AppDelegate.swift in Sources */,
 				D98D67B826A9CB100008A353 /* SceneDelegate.swift in Sources */,
