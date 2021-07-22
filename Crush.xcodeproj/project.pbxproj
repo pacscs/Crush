@@ -1,0 +1,615 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 50;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		D98D67B626A9CB100008A353 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D98D67B526A9CB100008A353 /* AppDelegate.swift */; };
+		D98D67B826A9CB100008A353 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D98D67B726A9CB100008A353 /* SceneDelegate.swift */; };
+		D98D67BA26A9CB100008A353 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D98D67B926A9CB100008A353 /* ViewController.swift */; };
+		D98D67BD26A9CB100008A353 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D98D67BB26A9CB100008A353 /* Main.storyboard */; };
+		D98D67C026A9CB100008A353 /* Crush.xcdatamodeld in Sources */ = {isa = PBXBuildFile; fileRef = D98D67BE26A9CB100008A353 /* Crush.xcdatamodeld */; };
+		D98D67C226A9CB130008A353 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = D98D67C126A9CB130008A353 /* Assets.xcassets */; };
+		D98D67C526A9CB130008A353 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = D98D67C326A9CB130008A353 /* LaunchScreen.storyboard */; };
+		D98D67D026A9CB140008A353 /* CrushTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D98D67CF26A9CB140008A353 /* CrushTests.swift */; };
+		D98D67DB26A9CB140008A353 /* CrushUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = D98D67DA26A9CB140008A353 /* CrushUITests.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXContainerItemProxy section */
+		D98D67CC26A9CB140008A353 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D98D67AA26A9CB0F0008A353 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = D98D67B126A9CB100008A353;
+			remoteInfo = Crush;
+		};
+		D98D67D726A9CB140008A353 /* PBXContainerItemProxy */ = {
+			isa = PBXContainerItemProxy;
+			containerPortal = D98D67AA26A9CB0F0008A353 /* Project object */;
+			proxyType = 1;
+			remoteGlobalIDString = D98D67B126A9CB100008A353;
+			remoteInfo = Crush;
+		};
+/* End PBXContainerItemProxy section */
+
+/* Begin PBXFileReference section */
+		D98D67B226A9CB100008A353 /* Crush.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Crush.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		D98D67B526A9CB100008A353 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
+		D98D67B726A9CB100008A353 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
+		D98D67B926A9CB100008A353 /* ViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ViewController.swift; sourceTree = "<group>"; };
+		D98D67BC26A9CB100008A353 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/Main.storyboard; sourceTree = "<group>"; };
+		D98D67BF26A9CB100008A353 /* Crush.xcdatamodel */ = {isa = PBXFileReference; lastKnownFileType = wrapper.xcdatamodel; path = Crush.xcdatamodel; sourceTree = "<group>"; };
+		D98D67C126A9CB130008A353 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		D98D67C426A9CB130008A353 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
+		D98D67C626A9CB130008A353 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D98D67CB26A9CB140008A353 /* CrushTests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CrushTests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		D98D67CF26A9CB140008A353 /* CrushTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CrushTests.swift; sourceTree = "<group>"; };
+		D98D67D126A9CB140008A353 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		D98D67D626A9CB140008A353 /* CrushUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CrushUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
+		D98D67DA26A9CB140008A353 /* CrushUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CrushUITests.swift; sourceTree = "<group>"; };
+		D98D67DC26A9CB140008A353 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		D98D67AF26A9CB100008A353 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D98D67C826A9CB140008A353 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D98D67D326A9CB140008A353 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		D98D67A926A9CB0F0008A353 = {
+			isa = PBXGroup;
+			children = (
+				D98D67B426A9CB100008A353 /* Crush */,
+				D98D67CE26A9CB140008A353 /* CrushTests */,
+				D98D67D926A9CB140008A353 /* CrushUITests */,
+				D98D67B326A9CB100008A353 /* Products */,
+			);
+			sourceTree = "<group>";
+		};
+		D98D67B326A9CB100008A353 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				D98D67B226A9CB100008A353 /* Crush.app */,
+				D98D67CB26A9CB140008A353 /* CrushTests.xctest */,
+				D98D67D626A9CB140008A353 /* CrushUITests.xctest */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		D98D67B426A9CB100008A353 /* Crush */ = {
+			isa = PBXGroup;
+			children = (
+				D98D67B526A9CB100008A353 /* AppDelegate.swift */,
+				D98D67B726A9CB100008A353 /* SceneDelegate.swift */,
+				D98D67B926A9CB100008A353 /* ViewController.swift */,
+				D98D67BB26A9CB100008A353 /* Main.storyboard */,
+				D98D67C126A9CB130008A353 /* Assets.xcassets */,
+				D98D67C326A9CB130008A353 /* LaunchScreen.storyboard */,
+				D98D67C626A9CB130008A353 /* Info.plist */,
+				D98D67BE26A9CB100008A353 /* Crush.xcdatamodeld */,
+			);
+			path = Crush;
+			sourceTree = "<group>";
+		};
+		D98D67CE26A9CB140008A353 /* CrushTests */ = {
+			isa = PBXGroup;
+			children = (
+				D98D67CF26A9CB140008A353 /* CrushTests.swift */,
+				D98D67D126A9CB140008A353 /* Info.plist */,
+			);
+			path = CrushTests;
+			sourceTree = "<group>";
+		};
+		D98D67D926A9CB140008A353 /* CrushUITests */ = {
+			isa = PBXGroup;
+			children = (
+				D98D67DA26A9CB140008A353 /* CrushUITests.swift */,
+				D98D67DC26A9CB140008A353 /* Info.plist */,
+			);
+			path = CrushUITests;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		D98D67B126A9CB100008A353 /* Crush */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D98D67DF26A9CB140008A353 /* Build configuration list for PBXNativeTarget "Crush" */;
+			buildPhases = (
+				D98D67AE26A9CB100008A353 /* Sources */,
+				D98D67AF26A9CB100008A353 /* Frameworks */,
+				D98D67B026A9CB100008A353 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = Crush;
+			productName = Crush;
+			productReference = D98D67B226A9CB100008A353 /* Crush.app */;
+			productType = "com.apple.product-type.application";
+		};
+		D98D67CA26A9CB140008A353 /* CrushTests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D98D67E226A9CB140008A353 /* Build configuration list for PBXNativeTarget "CrushTests" */;
+			buildPhases = (
+				D98D67C726A9CB140008A353 /* Sources */,
+				D98D67C826A9CB140008A353 /* Frameworks */,
+				D98D67C926A9CB140008A353 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				D98D67CD26A9CB140008A353 /* PBXTargetDependency */,
+			);
+			name = CrushTests;
+			productName = CrushTests;
+			productReference = D98D67CB26A9CB140008A353 /* CrushTests.xctest */;
+			productType = "com.apple.product-type.bundle.unit-test";
+		};
+		D98D67D526A9CB140008A353 /* CrushUITests */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = D98D67E526A9CB140008A353 /* Build configuration list for PBXNativeTarget "CrushUITests" */;
+			buildPhases = (
+				D98D67D226A9CB140008A353 /* Sources */,
+				D98D67D326A9CB140008A353 /* Frameworks */,
+				D98D67D426A9CB140008A353 /* Resources */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+				D98D67D826A9CB140008A353 /* PBXTargetDependency */,
+			);
+			name = CrushUITests;
+			productName = CrushUITests;
+			productReference = D98D67D626A9CB140008A353 /* CrushUITests.xctest */;
+			productType = "com.apple.product-type.bundle.ui-testing";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		D98D67AA26A9CB0F0008A353 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				LastSwiftUpdateCheck = 1240;
+				LastUpgradeCheck = 1240;
+				TargetAttributes = {
+					D98D67B126A9CB100008A353 = {
+						CreatedOnToolsVersion = 12.4;
+					};
+					D98D67CA26A9CB140008A353 = {
+						CreatedOnToolsVersion = 12.4;
+						TestTargetID = D98D67B126A9CB100008A353;
+					};
+					D98D67D526A9CB140008A353 = {
+						CreatedOnToolsVersion = 12.4;
+						TestTargetID = D98D67B126A9CB100008A353;
+					};
+				};
+			};
+			buildConfigurationList = D98D67AD26A9CB0F0008A353 /* Build configuration list for PBXProject "Crush" */;
+			compatibilityVersion = "Xcode 9.3";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = D98D67A926A9CB0F0008A353;
+			productRefGroup = D98D67B326A9CB100008A353 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				D98D67B126A9CB100008A353 /* Crush */,
+				D98D67CA26A9CB140008A353 /* CrushTests */,
+				D98D67D526A9CB140008A353 /* CrushUITests */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		D98D67B026A9CB100008A353 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D98D67C526A9CB130008A353 /* LaunchScreen.storyboard in Resources */,
+				D98D67C226A9CB130008A353 /* Assets.xcassets in Resources */,
+				D98D67BD26A9CB100008A353 /* Main.storyboard in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D98D67C926A9CB140008A353 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D98D67D426A9CB140008A353 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		D98D67AE26A9CB100008A353 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D98D67BA26A9CB100008A353 /* ViewController.swift in Sources */,
+				D98D67B626A9CB100008A353 /* AppDelegate.swift in Sources */,
+				D98D67B826A9CB100008A353 /* SceneDelegate.swift in Sources */,
+				D98D67C026A9CB100008A353 /* Crush.xcdatamodeld in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D98D67C726A9CB140008A353 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D98D67D026A9CB140008A353 /* CrushTests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+		D98D67D226A9CB140008A353 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				D98D67DB26A9CB140008A353 /* CrushUITests.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin PBXTargetDependency section */
+		D98D67CD26A9CB140008A353 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = D98D67B126A9CB100008A353 /* Crush */;
+			targetProxy = D98D67CC26A9CB140008A353 /* PBXContainerItemProxy */;
+		};
+		D98D67D826A9CB140008A353 /* PBXTargetDependency */ = {
+			isa = PBXTargetDependency;
+			target = D98D67B126A9CB100008A353 /* Crush */;
+			targetProxy = D98D67D726A9CB140008A353 /* PBXContainerItemProxy */;
+		};
+/* End PBXTargetDependency section */
+
+/* Begin PBXVariantGroup section */
+		D98D67BB26A9CB100008A353 /* Main.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				D98D67BC26A9CB100008A353 /* Base */,
+			);
+			name = Main.storyboard;
+			sourceTree = "<group>";
+		};
+		D98D67C326A9CB130008A353 /* LaunchScreen.storyboard */ = {
+			isa = PBXVariantGroup;
+			children = (
+				D98D67C426A9CB130008A353 /* Base */,
+			);
+			name = LaunchScreen.storyboard;
+			sourceTree = "<group>";
+		};
+/* End PBXVariantGroup section */
+
+/* Begin XCBuildConfiguration section */
+		D98D67DD26A9CB140008A353 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = DEBUG;
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		D98D67DE26A9CB140008A353 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		D98D67E026A9CB140008A353 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 9Z538QZ5M6;
+				INFOPLIST_FILE = Crush/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = br.com.paulocoraini.Crush;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		D98D67E126A9CB140008A353 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 9Z538QZ5M6;
+				INFOPLIST_FILE = Crush/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = br.com.paulocoraini.Crush;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+		D98D67E326A9CB140008A353 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 9Z538QZ5M6;
+				INFOPLIST_FILE = CrushTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = br.com.paulocoraini.CrushTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Crush.app/Crush";
+			};
+			name = Debug;
+		};
+		D98D67E426A9CB140008A353 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 9Z538QZ5M6;
+				INFOPLIST_FILE = CrushTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = br.com.paulocoraini.CrushTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/Crush.app/Crush";
+			};
+			name = Release;
+		};
+		D98D67E626A9CB140008A353 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 9Z538QZ5M6;
+				INFOPLIST_FILE = CrushUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = br.com.paulocoraini.CrushUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = Crush;
+			};
+			name = Debug;
+		};
+		D98D67E726A9CB140008A353 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				DEVELOPMENT_TEAM = 9Z538QZ5M6;
+				INFOPLIST_FILE = CrushUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = br.com.paulocoraini.CrushUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = Crush;
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		D98D67AD26A9CB0F0008A353 /* Build configuration list for PBXProject "Crush" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D98D67DD26A9CB140008A353 /* Debug */,
+				D98D67DE26A9CB140008A353 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D98D67DF26A9CB140008A353 /* Build configuration list for PBXNativeTarget "Crush" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D98D67E026A9CB140008A353 /* Debug */,
+				D98D67E126A9CB140008A353 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D98D67E226A9CB140008A353 /* Build configuration list for PBXNativeTarget "CrushTests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D98D67E326A9CB140008A353 /* Debug */,
+				D98D67E426A9CB140008A353 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		D98D67E526A9CB140008A353 /* Build configuration list for PBXNativeTarget "CrushUITests" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				D98D67E626A9CB140008A353 /* Debug */,
+				D98D67E726A9CB140008A353 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+
+/* Begin XCVersionGroup section */
+		D98D67BE26A9CB100008A353 /* Crush.xcdatamodeld */ = {
+			isa = XCVersionGroup;
+			children = (
+				D98D67BF26A9CB100008A353 /* Crush.xcdatamodel */,
+			);
+			currentVersion = D98D67BF26A9CB100008A353 /* Crush.xcdatamodel */;
+			path = Crush.xcdatamodeld;
+			sourceTree = "<group>";
+			versionGroupType = wrapper.xcdatamodel;
+		};
+/* End XCVersionGroup section */
+	};
+	rootObject = D98D67AA26A9CB0F0008A353 /* Project object */;
+}
