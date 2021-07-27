@@ -21,20 +21,15 @@ class CombineCardView: UIView {
     }
     
     
-    let picImageView: UIImageView = {
-        let imageView = UIImageView()
-        imageView.image = UIImage(named: "pessoa-1")
-        imageView.contentMode = .scaleAspectFill
-        imageView.clipsToBounds = true
-        
-        
-        return imageView
-    }()
+    let picImageView: UIImageView = .picImageView()
     
     let nameLabel: UILabel = .txtBoldLabel(32, textColor: .white)
     let ageLabel: UILabel = .txtLabel(28, textColor: .white)
     let phraseLabel: UILabel = .txtLabel(18, textColor: .white, numberOfLine: 2)
     
+    let deslikeImageView: UIImageView = .iconCard(named: "card-deslike")
+    let likeImageView: UIImageView = .iconCard(named: "card-like")
+
     override init (frame: CGRect) {
         super.init(frame: frame)
         
@@ -44,15 +39,17 @@ class CombineCardView: UIView {
         layer.cornerRadius = 8
         clipsToBounds = true
         
-        nameLabel.text = "Ana Laura"
-        ageLabel.text = "20"
-        phraseLabel.text = "O último a dar match chama"
-        
         nameLabel.addShadow()
         ageLabel.addShadow()
         phraseLabel.addShadow()
         
         addSubview(picImageView)
+        
+        addSubview(deslikeImageView)
+        deslikeImageView.fill(top: topAnchor, leading: nil, trailing: trailingAnchor, bottom: nil, padding: .init(top: 20, left: 0, bottom: 0, right: 20))
+        
+        addSubview(likeImageView)
+        likeImageView.fill(top: topAnchor, leading: leadingAnchor, trailing: nil, bottom: nil, padding: .init(top: 20, left: 20, bottom: 0, right: 0))
         
         picImageView.fillSuperview()
         
