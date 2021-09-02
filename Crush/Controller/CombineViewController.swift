@@ -10,6 +10,7 @@ import UIKit
 enum Action {
     case deslike
     case like
+    case superlike
 }
 
 class CombineViewController: UIViewController {
@@ -33,14 +34,27 @@ class CombineViewController: UIViewController {
         navigationController?.navigationBar.isHidden = true
         view.backgroundColor = UIColor.systemGroupedBackground
         
+        let loading = Loading(frame: view.frame)
+        view.insertSubview(loading, at: 0)
+        
         self.addHeader()
         self.addFooter()
         self.searchUsers()
     }
     
     func searchUsers () {
-        self.users = UserService.shared.shearchUsers()
-        self.addCards()
+//        self.users = UserService.shared.shearchUsers()
+//        self.addCards()
+        UserService.shared.shearchUsers { (users, err) in
+            if let users = users {
+                
+                DispatchQueue.main.async {
+                    self.users = users
+                    self.addCards()
+                }
+                
+            }
+        }
 
     }
 }
@@ -68,6 +82,12 @@ extension CombineViewController {
         view.addSubview(stackView)
         stackView.fill(top: nil, leading: view.leadingAnchor, trailing: view.trailingAnchor, bottom: view.bottomAnchor, padding: .init(top: 0, left: 16, bottom: 34, right: 16))
         
+        
+        
+        
+        deslikeButton.addTarget(self, action: #selector(deslikeClick), for: .touchUpInside)
+        likeButton.addTarget(self, action: #selector(likeClick), for: .touchUpInside)
+        superlikeButton.addTarget(self, action: #selector(superlikeClick), for: .touchUpInside)
     }
     
     
@@ -91,7 +111,7 @@ extension CombineViewController {
             
             card.addGestureRecognizer(gesture)
             
-            view.insertSubview(card, at: 0)
+            view.insertSubview(card, at: 1)
         }
     }
 
@@ -102,10 +122,16 @@ extension CombineViewController {
                 return user.id != card.tag
             })
         }
+    func checkMatch (user: User) {
+        if user.match {
+            
+        }
+    }
 }
 
 extension CombineViewController {
     @objc func handleCard (_ gesture: UIPanGestureRecognizer) {
+        
         if let card = gesture.view as? CombineCardView {
             let point = gesture.translation(in: view)
             
@@ -150,6 +176,22 @@ extension CombineViewController {
         }
         
     }
+    
+    @objc func deslikeClick () {
+        self.animeCard(rotationAngle: -0.4, action: .deslike)
+        
+        }
+    
+    @objc func likeClick () {
+        self.animeCard(rotationAngle: 0.4, action: .like)
+        
+        }
+    
+    @objc func superlikeClick () {
+        self.animeCard(rotationAngle: 0, action: .superlike)
+        
+        }
+    
     func animeCard (rotationAngle: CGFloat, action: Action) {
         if let user = self.users.first {
             for view in self.view.subviews {
@@ -158,17 +200,32 @@ extension CombineViewController {
                         
                         let center: CGPoint
                         
+                        var like: Bool
+                        
                         switch action {
                         case .deslike:
                             center = CGPoint(x: card.center.x - self.view.bounds.width, y: card.center.y + 50)
+                            like = false
                         case .like:
                             center = CGPoint(x: card.center.x + self.view.bounds.width, y: card.center.y + 50)
+                            like = true
+                        case .superlike:
+                            center = CGPoint(x: card.center.x, y: card.center.y - self.view.bounds.height)
+                            like = true
                         }
                         
-                        UIView.animate(withDuration: 0.2, animations: {
+                        UIView.animate(withDuration: 0.4, animations: {
                             card.center = center
                             card.transform = CGAffineTransform(rotationAngle: rotationAngle)
+                            card.deslikeImageView.alpha = like == false ? 1 : 0
+                            card.likeImageView.alpha = like == true ? 1 : 0
                         }) {(_) in
+                            
+                            
+                            if like {
+                                self.checkMatch(user: user)
+                            }
+                                
                             self.removeCard(card: card)
                         }
 

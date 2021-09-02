@@ -33,8 +33,13 @@ class UserService {
     User(id: 118, name: "Helen Aung San", Age: 24, match: true, phrase: "Espero q vc seja mente aberta", photo: "pessoa-18"),
     User(id: 119, name: "Laura Nelle", Age: 18, match: false, phrase: "Estou aqui para fazer novas amizades", photo: "pessoa-19"),
     User(id: 120, name: "Maria Virginia", Age: 18, match: false, phrase: "Adoro balada", photo: "pessoa-20")]
-    func shearchUsers () -> [User] {
-        return self.users
+    
+    func shearchUsers (completion: @escaping ([User]?, Error?) -> ()) {
+        
+        DispatchQueue.main.asyncAfter(deadline: .now() + 2.0) {
+            completion(self.users, nil)
+        
+        }
     }
     
 }

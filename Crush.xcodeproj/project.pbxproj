@@ -9,6 +9,7 @@
 /* Begin PBXBuildFile section */
 		D9555AFD26B0262400BF7840 /* UIImageView.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9555AFC26B0262400BF7840 /* UIImageView.swift */; };
 		D9555B0526B02C1400BF7840 /* UIButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9555B0426B02C1400BF7840 /* UIButton.swift */; };
+		D9555B0A26B0633E00BF7840 /* Loading.swift in Sources */ = {isa = PBXBuildFile; fileRef = D9555B0926B0633E00BF7840 /* Loading.swift */; };
 		D98D67B626A9CB100008A353 /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D98D67B526A9CB100008A353 /* AppDelegate.swift */; };
 		D98D67B826A9CB100008A353 /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = D98D67B726A9CB100008A353 /* SceneDelegate.swift */; };
 		D98D67BA26A9CB100008A353 /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = D98D67B926A9CB100008A353 /* ViewController.swift */; };
@@ -46,6 +47,7 @@
 /* Begin PBXFileReference section */
 		D9555AFC26B0262400BF7840 /* UIImageView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIImageView.swift; sourceTree = "<group>"; };
 		D9555B0426B02C1400BF7840 /* UIButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UIButton.swift; sourceTree = "<group>"; };
+		D9555B0926B0633E00BF7840 /* Loading.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Loading.swift; sourceTree = "<group>"; };
 		D98D67B226A9CB100008A353 /* Crush.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Crush.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		D98D67B526A9CB100008A353 /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		D98D67B726A9CB100008A353 /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -164,6 +166,7 @@
 			isa = PBXGroup;
 			children = (
 				D98D680026AA0DC90008A353 /* CombineCardView.swift */,
+				D9555B0926B0633E00BF7840 /* Loading.swift */,
 			);
 			path = View;
 			sourceTree = "<group>";
@@ -327,6 +330,7 @@
 			files = (
 				D98D67EC26A9F5B50008A353 /* UIView.swift in Sources */,
 				D98D67BA26A9CB100008A353 /* ViewController.swift in Sources */,
+				D9555B0A26B0633E00BF7840 /* Loading.swift in Sources */,
 				D98D680126AA0DC90008A353 /* CombineCardView.swift in Sources */,
 				D98D67B626A9CB100008A353 /* AppDelegate.swift in Sources */,
 				D98D67B826A9CB100008A353 /* SceneDelegate.swift in Sources */,
